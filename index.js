@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.post('/', (req, res) => {
+app.post('/ussd', (req, res) => {
     // Read the variables sent via POST from our API
     const {
         sessionId,
